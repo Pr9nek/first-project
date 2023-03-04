@@ -280,10 +280,13 @@
 }
 
 .khan {
+  background-color: #F2F2F2;
+}
+
+.khan__container {
   width: 80%;
   margin: 0 auto;
   padding-top: 100px;
-  background-color: #F2F2F2;
 }
 
 .khan__author {
