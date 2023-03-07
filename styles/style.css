@@ -8,6 +8,24 @@
 @import url(../blocks/description/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/description/two-columns/__span-accent/two-columns__span-accent.css);
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+.link {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
 .header {
   background: #F2F2F2;
   position: relative;
@@ -19,6 +37,7 @@
   min-height: 600px;
   max-height: 756px;
   padding-left: 64px;
+  overflow: hidden;
   }
 
   .logo__place_header {
@@ -72,6 +91,10 @@
     top: 64px;
     background: #2F80ED;
     z-index: 0;
+  }
+
+  .rotation {
+    animation: rotation 20s infinite linear;
   }
 
   .techniques {
@@ -211,6 +234,8 @@
 
 .section-title_theme_dark {
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -225,6 +250,8 @@
 
 .section-subtitle_theme_dark {
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .page__table {
@@ -240,6 +267,8 @@
 
 .table_theme_dark {
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .table__heading {
@@ -350,6 +379,20 @@
 .kaufman {
   background-color: black;
   padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  height: 877px;
+  width: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  right: -210px;
+  top: 0;
+  z-index: 0;
 }
 
 .resources {
