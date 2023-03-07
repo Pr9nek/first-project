@@ -1,12 +1,31 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/link/link.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/logo/__place/_header/logo__place_header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
 @import url(../blocks/description/description.css);
-@import url(../blocks/description/__two-columns/description__two-columns.css);
-@import url(../blocks/description/two-columns/two-columns.css);
-@import url(../blocks/description/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/description/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/description/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/description/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__description/cards__description.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+
+
 
 @keyframes rotation {
   from {
@@ -17,143 +36,9 @@ to {
 }
 }
 
-.link {
-  opacity: 1;
-  transition: opacity .5s ease;
-}
-
-.link:hover {
-  opacity: 0.6;
-}
-
-.header {
-  background: #F2F2F2;
-  position: relative;
-  padding: 0 64px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  padding-left: 64px;
-  overflow: hidden;
-  }
-
-  .logo__place_header {
-    position: absolute;
-    width: 228px;
-    height: 32px;
-    top: 30px;
-    left: 64px;
-  }
-
-  .header__title {
-    width: 730px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 102px;
-    line-height: 96px;
-    z-index: 2;
-  }
-
-  .header__subtitle {
-    position: absolute;
-    width: 388px;
-    left: 64px;
-    bottom: 30px;
-    margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    z-index: 2;
-  }
-
-  .header__main-illustration {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 765px;
-    height: 608px;
-    background-image: url(../images/header-image.png);
-    background-size: cover;
-    z-index: 1;
-  }
-
-  .header__square-pic {
-    position: absolute;
-    width: 568px;
-    height: 568px;
-    right: 0;
-    top: 64px;
-    background: #2F80ED;
-    z-index: 0;
-  }
-
   .rotation {
     animation: rotation 20s infinite linear;
   }
-
-  .techniques {
-    padding: 100px 0 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cards {
-    width: 920px;
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 100px;
-    flex-wrap: wrap;
-  }
-
-  .cards__item {
-    width: 240px;
-  }
-
-  .cards__image {
-    width: 160px;
-    height: 160px;
-    border-radius: 100px;
-    margin: 60px 40px 43px;
-  }
-
-  .cards__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 115%;
-    text-align: center;
-    margin: 0 0 16px;
-  }
-
-.cards__description {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  text-align: center;
-  margin: 0;
-}
-
-.video {
-  padding-top: 100px;
-}
-
-.video__iframes {
-  margin: 50px auto -50px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 
 .oakley {
   display: flex;
@@ -222,30 +107,10 @@ to {
   margin: 0 auto;
 }
 
-.section-title {
-  width: 60%;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 115%;
-  text-align: center;
-}
-
 .section-title_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
-}
-
-.section-subtitle {
-  width: 60%;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  text-align: center;
 }
 
 .section-subtitle_theme_dark {
