@@ -1,10 +1,8 @@
-.two-columns__brief {
-  width: 175px;
+.table__text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
-  color: #2f80ed;
-  margin-top: 0;
-}
+  margin: 20px 0 0;
+  }

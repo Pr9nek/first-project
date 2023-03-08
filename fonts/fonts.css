@@ -19,6 +19,6 @@
   url(./Inter/Inter-SemiBold.woff) format('woff'),
   url(./Inter/Inter-SemiBold.woff2) format('woff2');
   font-family: 'Inter';
-  font-weight: 500; /* какое значение писать в свойстве font-weight: ? */
+  font-weight: 500;
 }
 

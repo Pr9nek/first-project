@@ -7,5 +7,20 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Inter', Arial, sans-serif;
+}
 
+.page__section {
+  margin: 0 auto;
+}
+
+.page__title {
+  margin: 0 auto 20px;
+}
+
+.page__subtitle {
+  margin: 0 auto;
+}
+
+.page__table {
+  margin: 0 auto;
 }
